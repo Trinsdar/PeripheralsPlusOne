@@ -21,7 +21,6 @@ import com.austinv11.peripheralsplusplus.network.InputEventPacket;
 import com.austinv11.peripheralsplusplus.network.ParticlePacket;
 import com.austinv11.peripheralsplusplus.network.PermCardChangePacket;
 import com.austinv11.peripheralsplusplus.network.RidableTurtlePacket;
-import com.austinv11.peripheralsplusplus.network.RobotEventPacket;
 import com.austinv11.peripheralsplusplus.network.ScaleRequestPacket;
 import com.austinv11.peripheralsplusplus.network.ScaleRequestResponsePacket;
 import com.austinv11.peripheralsplusplus.network.SynthPacket;
@@ -153,7 +152,6 @@ public class CommonProxy {
 		NETWORK.registerMessage(GuiPacket.GuiPacketHandler.class, GuiPacket.class, discriminator++, Side.CLIENT);
 		NETWORK.registerMessage(TextFieldInputEventPacket.TextFieldInputEventPacketHandler.class, TextFieldInputEventPacket.class, discriminator++, Side.SERVER);
 		NETWORK.registerMessage(RidableTurtlePacket.RidableTurtlePacketHandler.class, RidableTurtlePacket.class, discriminator++, Side.SERVER);
-		NETWORK.registerMessage(RobotEventPacket.RobotEventPacketHandler.class, RobotEventPacket.class, discriminator++, Side.CLIENT);
 		NETWORK.registerMessage(PermCardChangePacket.PermCardChangePacketHandler.class, PermCardChangePacket.class, discriminator++, Side.SERVER);
 		NETWORK.registerMessage(SynthPacket.SynthPacketHandler.class, SynthPacket.class, discriminator++, Side.CLIENT);
 		NETWORK.registerMessage(SynthResponsePacket.SynthResponsePacketHandler.class, SynthResponsePacket.class, discriminator++, Side.SERVER);
